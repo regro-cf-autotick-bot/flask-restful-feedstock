@@ -1,8 +1,8 @@
 {% set name = "Flask-RESTful" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "f8240ec12349afe8df1db168ea7c336c4e5b0271a36982bff7394f93275f2ca9" %}
+{% set hash_val = "5ea9a5991abf2cb69b4aac19793faac6c032300505b325687d7c305ffaa76915" %}
 {% set build = 0 %}
 
 package:
