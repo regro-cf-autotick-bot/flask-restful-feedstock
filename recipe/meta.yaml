@@ -1,8 +1,7 @@
 {% set name = "Flask-RESTful" %}
-{% set version = "0.3.8" %}
+{% set version = "0.3.9" %}
 {% set bundle = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_val = "5ea9a5991abf2cb69b4aac19793faac6c032300505b325687d7c305ffaa76915" %}
+{% set hash_val = "ccec650b835d48192138c85329ae03735e6ced58e9b2d9c2146d6c84c06fa53e" %}
 {% set build = 0 %}
 
 package:
@@ -12,12 +11,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
-  {{ hash_type }}: {{ hash_val }}
+  sha256: {{ hash_val }}
 
 build:
   noarch: python
   number: {{ build }}
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -43,7 +42,7 @@ about:
   license: BSD 3-Clause
   license_file: LICENSE
   license_family: BSD
-  summary: 'Simple framework for creating REST APIs'
+  summary: Simple framework for creating REST APIs
   doc_url: https://flask-restful.readthedocs.io/en/latest/
   dev_url: https://www.github.com/flask-restful/flask-restful/
 
